@@ -1,8 +1,8 @@
-#What is PySkelWays ?
+# What is PySkelWays ?
 
-#How to use PySkelWays
+# How to use PySkelWays
 
-##Needed libraries
+## Needed libraries
 
 The library needed are :
 - Numpy and scipy for numerical storage and calculation
@@ -12,7 +12,7 @@ The library needed are :
  shapefile (pyshp) for conversion in GIS datas
 
 
-##The software
+## The software
 
 PySkelWays is the python software we have created for image analysis of spatial reticulated networks. 
 
@@ -27,7 +27,7 @@ All codes are made to be userfriendly using an IDE based on jupyter (interactive
 - Partial execution, to execute relevant part of the code and not everything (although possible)
 
 
-##Composition of the library
+## Composition of the library
 
 It is composed of two type of files :
 
@@ -53,7 +53,7 @@ To scan the properties of objects, it is recommended to use the function (M.dirP
 
 Objects are save as pickle files (.p) and can be loaded using pickle.load, and save using pickle.dump function. 
 
-##Folders and locations
+## Folders and locations
 
 *PySkelWays* is not exactly coded as a library, as it is not an installation with pip or conda, with an absolute path to the code when used. 
 It is mandatory that the folder PySkelWays containing all the code is located in the same folder as "extract.py" and "analyze.py". 
@@ -66,7 +66,7 @@ There are Four different location of the other files :
 - **QGISFold** : Where the shapefile are saved
 
 
-##Objects
+## Objects
 
 The objects are : 
 
@@ -82,7 +82,7 @@ Usually, ways are regenerated from the information on Arcs and places at the beg
 
 All the parameters are stocked inside a file "parameters.p", which is generated at the beginning of a **Extraction.py} run. Most elements are accessible inside the code. 
 
-##Generation of the objects
+## Generation of the objects
 
 The code **Extraction.py** function as follow : 
 
