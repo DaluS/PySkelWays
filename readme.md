@@ -3,7 +3,7 @@
 PyskelWays takes an image as input, and gives an hyper-graph of ways in multiple python objects as an output, that can be connected to other softwares such as QGIS.
 Ways are an efficient element of description for networks corresponding to a branch growth mechanisms. 
 
-More informations about this in chapter 3 and 4 of my thesis here : (https://frama.link/PaulVThesisHD for the HD version or https://frama.link/PaulVThesisCompressed if you want to save data)
+More informations about this in chapter 3 and 4 of my thesis here : (https://frama.link/PaulVThesisHD for the HD version or https://frama.link/PaulVThesisCompressed if you want to save data). A lot of illustrations and detail on how it works are there (Chapter 3) and typical properties (Chapter 4)
 
 I developed this to study the shape of *Gorgonia ventalina*, but it can be used on many different systems
 
