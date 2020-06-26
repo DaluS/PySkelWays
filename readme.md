@@ -5,10 +5,10 @@
 ##Needed libraries
 
 The library needed are :
-    - Numpy and scipy for numerical storage and calculation
-    - cv2 (openCV) for image analysis treatment
-    - os,pickle,copy,pathlib for storage and adresses management
-    - matplotlib for figure plot
+- Numpy and scipy for numerical storage and calculation
+- cv2 (openCV) for image analysis treatment
+- os,pickle,copy,pathlib for storage and adresses management
+- matplotlib for figure plot
  shapefile (pyshp) for conversion in GIS datas
 
 
@@ -23,8 +23,8 @@ The version we worked with (0.99) is named *PySkelFrac*, and the released versio
 All codes are made to be userfriendly using an IDE based on jupyter (interactive python) such as Anaconda or Atom. The two required functions for a better readability are : 
 
 
-    - code folding : there is a lot of "for $\_$ in range(1):" which are only here to fold sections
-    - Partial execution, to execute relevant part of the code and not everything (although possible)
+- code folding : there is a lot of "for $\_$ in range(1):" which are only here to fold sections
+- Partial execution, to execute relevant part of the code and not everything (although possible)
 
 
 ##Composition of the library
@@ -32,8 +32,8 @@ All codes are made to be userfriendly using an IDE based on jupyter (interactive
 It is composed of two type of files :
 
 
-    - The library itself *Pyskelways*
-    - The executable code **Extract.py**, and **Analyze.py**
+- The library itself *Pyskelways*
+- The executable code **Extract.py**, and **Analyze.py**
 
 
 The file **Extract.py** is the code to create the new classes, generate the ways and correct the links. The file **Analyze.py} contains all the tools to generate the graphs and the statistics on the different objects.
@@ -41,10 +41,10 @@ The file **Extract.py** is the code to create the new classes, generate the ways
 The library is composed of the files : 
 
 
-    - **Classes.py** containing all the classes properties
-    - **MiscFunc.py** containing all the functions we have created for network generation
-    - **Addproperties.py** containing the functions to add properties on a cleaned network
-    - **QGISsave.py** containing the function to generate QGIS files (.shp, .shx,.dbf)
+- **Classes.py** containing all the classes properties
+- **MiscFunc.py** containing all the functions we have created for network generation
+- **Addproperties.py** containing the functions to add properties on a cleaned network
+- **QGISsave.py** containing the function to generate QGIS files (.shp, .shx,.dbf)
 
 
 The code began as a class-oriented code but has been mostly developped using functions. 
@@ -70,11 +70,11 @@ There are Four different location of the other files :
 
 The objects are : 
 
-    - **IMG**, it contains all the map and general information on the gorgonian. 
-    - **AllContours**, which contains all the different contours/holes and the envelope. All the different contours are stocked in **AllContours.list}
-    - **AllArcs**, with the same approach as AllContours but on Arcs
-    - **AllPlaces**, same approach
-    - **AllVoies**, same approach. We used the french name of "Voies" instead of ways.
+- **IMG**, it contains all the map and general information on the gorgonian. 
+- **AllContours**, which contains all the different contours/holes and the envelope. All the different contours are stocked in **AllContours.list}
+- **AllArcs**, with the same approach as AllContours but on Arcs
+- **AllPlaces**, same approach
+- **AllVoies**, same approach. We used the french name of "Voies" instead of ways.
 
 
 Usually, ways are regenerated from the information on Arcs and places at the beginning of each analyze, and thus not stocked as such. 
@@ -87,14 +87,14 @@ All the parameters are stocked inside a file "parameters.p", which is generated 
 The code **Extraction.py** function as follow : 
 
 
-    - It read the image, and extract the binarisation, distance image and so on in **c.Image**
-    - It generate from the binarized image all the contours in **c.Contours**
-    - It generate the arcs in** c.Arcs**
-    - It generate the places in **c.Places**
-    - It calculate all the basic elements for place and link score in **M.Preparescore}
-    - It generate all the scores in** M.LinkByScore**
-    - It creates the ways in **c.Voies**
-    - It add the extremities in **AllPlaces.AddExtremities** (which impact also AllVoies).
+- It read the image, and extract the binarisation, distance image and so on in **c.Image**
+- It generate from the binarized image all the contours in **c.Contours**
+- It generate the arcs in** c.Arcs**
+- It generate the places in **c.Places**
+- It calculate all the basic elements for place and link score in **M.Preparescore}
+- It generate all the scores in** M.LinkByScore**
+- It creates the ways in **c.Voies**
+- It add the extremities in **AllPlaces.AddExtremities** (which impact also AllVoies).
 
 
 After this is done, the interface for Ways split and Link manual corrections is created, and this can be done as many time as needed. Each time, it regenerate AllPlaces and AllArcs with the new corrections. 
