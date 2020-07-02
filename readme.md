@@ -7,6 +7,9 @@ More informations about this in chapter 3 and 4 of my thesis here : (https://fra
 
 I developed this to study the shape of *Gorgonia ventalina*, but it can be used on many different systems
 
+If you want ready-to-be tested images, you can find some here : https://drive.google.com/file/d/12ezgbNzdPncg6tO4WVvY1M3rZCJ2BMLb/view?usp=sharing
+If you want to see already-extracted data, you can find some here : https://docs.google.com/document/d/1Xiw61nxyfC9pq7DMdjFhMKolkDDIVQmHXiIsGydzR9A/edit?usp=sharing
+
 # How to use PySkelWays
 
 ## Needed libraries
